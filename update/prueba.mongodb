@@ -1,13 +1,13 @@
 use ("espoch_store");
 
-var documentoExistente = db.universidades.findOne({ _id: ObjectId("6577f2e0f197d6a9b5d8f404") });
+var documentoExistente = db.universidades.findOne({ _id: 1 });
 
 if (documentoExistente) {
     // Elimina el documento existente
-    db.universidades.deleteOne({ _id: ObjectId("6577f2e0f197d6a9b5d8f404") });
+    db.universidades.deleteOne({ _id: 1 });
 
     // Modifica el documento existente con el nuevo _id
-    documentoExistente._id = 2;  // Puedes asignar un nuevo ObjectId o un valor único.
+    documentoExistente._id = null;  // Puedes asignar un nuevo ObjectId o un valor único.
     db.universidades.insertOne(documentoExistente);
 }
 
