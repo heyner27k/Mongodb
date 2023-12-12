@@ -1,0 +1,10 @@
+use("espoch_store")
+db.universidades.updateOne(
+    {_id:4},
+    {
+        $inc:{
+            direccion:100
+        }
+        
+    }
+)

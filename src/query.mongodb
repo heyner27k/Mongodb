@@ -1,5 +1,0 @@
-use("sample_training")
-
-//nombres y ciudades mongodb
-
-db.zips.find({state: "NY"})

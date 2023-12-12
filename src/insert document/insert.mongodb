@@ -1,0 +1,24 @@
+use("espoch_store")
+db.Universidades.drop()
+db.Universidades.insertMany([
+{
+    
+    name:"espoch",
+    direccion:1400
+},
+{
+    
+    name:"espe",
+    direccion:2000
+},
+{
+    
+    name:"unach",
+    direccion:1400
+},
+{
+    _id:4,
+    name:"puce",
+    direccion:1400
+},
+])

@@ -1,0 +1,10 @@
+use("espoch_store")
+db.Universidades.updateOne(
+    {_id:ObjectId("65779f128ef5fbe9e08c8db")},
+    {
+        $set:{
+            _id: "3",
+        }
+        
+    }
+)
